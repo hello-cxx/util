@@ -16,3 +16,5 @@ endif()
 
 add_library(${PROJECT_NAME} STATIC ${SOURCE_FILES} ${HEADER_FILES})
 add_library(${HELLO_NAMESPACE}::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
+
+add_subdirectory(test)
